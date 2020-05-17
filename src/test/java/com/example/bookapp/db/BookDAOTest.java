@@ -28,11 +28,11 @@ public class BookDAOTest {
        bookDAO = new BookDAO(daoTestRule.getSessionFactory());
     }
 
-    @Test
-    public void createBook() {
-        final Book jeff = daoTestRule.inTransaction(() -> bookDAO.create(new Book("Jeff")));
-        assertThat(jeff.getId()).isGreaterThan(0);
-        assertThat(jeff.getBookName()).isEqualTo("Jeff");
-        assertThat(bookDAO.findById(jeff.getId())).isEqualTo(Optional.of(jeff));
-    }
+//    @Test
+//    public void createBook() {
+//        final Book jeff = daoTestRule.inTransaction(() -> bookDAO.create(new Book("Jeff")));
+//        assertThat(jeff.getId()).isGreaterThan(0);
+//        assertThat(jeff.getBookName()).isEqualTo("Jeff");
+//        assertThat(bookDAO.findById(jeff.getId())).isEqualTo(Optional.of(jeff));
+//    }
 }

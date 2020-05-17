@@ -9,12 +9,14 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 
+import com.google.inject.Inject;
+
 public class BookConfiguration extends Configuration {
 
     @NotNull
     @Valid
-    private DataSourceFactory dataSourceFactory
-            = new DataSourceFactory();
+    private DataSourceFactory dataSourceFactory;
+//            = new DataSourceFactory();
 
     @JsonProperty("database")
     public DataSourceFactory getDataSourceFactory() {
