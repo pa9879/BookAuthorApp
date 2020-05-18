@@ -4,19 +4,19 @@
 
     REQUEST - GET 
   
-    PATH - /author
+    PATH - /authors
 
 2. Get an author by id
 
     REQUEST - GET 
     
-    PATH - /author/{id}
+    PATH - /authors/{id}
     
 3. Given an author id return his books
     
     REQUEST - GET 
     
-    PATH - /author/{id}/books
+    PATH - /authors/{id}/books
     
 4. Get all the books
     
@@ -38,7 +38,7 @@
      
      REQUEST - POST
      
-     PATH - /author
+     PATH - /authors
      
      Content Type - Application/JSON
      
